@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="866c38da-6f16-4a06-a04f-148a713b38df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Django/django_project/django_project/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django/django_project/django_project/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django/django_project/django_project/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Django/django_project/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/command.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Django/command.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Django/website/website/__pycache__/urls.cpython-37.pyc" beforeDir="false" afterPath="$PROJECT_DIR$/Django/django_project/django_project/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="866c38da-6f16-4a06-a04f-148a713b38df" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +14,7 @@
         <entry file="file://$PROJECT_DIR$/Django/command.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -100,19 +92,6 @@
               <item name="Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
               <item name="Django" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
-              <item name="django_project" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -338,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1548589349159</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update">
+      <created>1548739881481</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1548739881481</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -353,7 +339,7 @@
   <component name="ToolWindowManager">
     <frame x="670" y="-2" width="697" height="775" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23065251" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23065251" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -363,10 +349,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" auto_hide="true" id="TODO" order="6" weight="0.32866043" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.31950846" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.31931463" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32977098" />
       <window_info anchor="bottom" x="11" y="277" width="1344" height="214" id="Python Console" order="9" weight="0.32872504" />
-      <window_info active="true" anchor="bottom" x="395" y="464" width="892" height="209" id="Terminal" order="10" visible="true" weight="0.3317757" />
+      <window_info anchor="bottom" x="395" y="464" width="892" height="209" id="Terminal" order="10" weight="0.3317757" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -475,7 +461,7 @@
     <entry file="file://$PROJECT_DIR$/Django/command.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
