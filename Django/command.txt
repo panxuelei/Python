@@ -3,4 +3,3 @@ django-admin startproject website
 python manage.py runserver
 python manage.py startapp music
 
-
