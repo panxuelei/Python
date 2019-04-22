@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="866c38da-6f16-4a06-a04f-148a713b38df" name="Default Changelist" comment="" />
+    <list default="true" id="866c38da-6f16-4a06-a04f-148a713b38df" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/Django/django_project/blog/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/urllib0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Django/django_project/django_project/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Django/django_project/django_project/urls.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,29 +14,35 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Django/command.txt">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Modules/urllib0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="21">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Django/django_project/manage.py">
+        <entry file="file://$PROJECT_DIR$/Violent Python/dictionary.txt">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Django/django_project/django_project/urls.py">
+        <entry file="file://$PROJECT_DIR$/Violent Python/crack_zip.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-              <folding>
-                <element signature="e#638#670#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="294">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Violent Python/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -48,6 +59,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GotoClassSymbolConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="BuildoutCfg" />
+      <filtered-out-file-type name="DTD" />
+      <filtered-out-file-type name="EditorConfig" />
+      <filtered-out-file-type name="HTML" />
+      <filtered-out-file-type name="JQL" />
+      <filtered-out-file-type name="JSON" />
+      <filtered-out-file-type name="JSON5" />
+      <filtered-out-file-type name="Markdown" />
+      <filtered-out-file-type name="TEXT" />
+      <filtered-out-file-type name="Properties" />
+      <filtered-out-file-type name="Python" />
+      <filtered-out-file-type name="RegExp" />
+      <filtered-out-file-type name="RELAX-NG" />
+      <filtered-out-file-type name="ReST" />
+      <filtered-out-file-type name="XHTML" />
+      <filtered-out-file-type name="XML" />
+      <filtered-out-file-type name="yaml" />
+    </file-type-list>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -63,12 +95,18 @@
         <option value="$PROJECT_DIR$/Django/website/website/urls.py" />
         <option value="$PROJECT_DIR$/Django/website/music/urls.py" />
         <option value="$PROJECT_DIR$/Django/command.txt" />
+        <option value="$PROJECT_DIR$/Django/django_project/blog/url.py" />
+        <option value="$PROJECT_DIR$/Django/django_project/django_project/urls.py" />
+        <option value="$PROJECT_DIR$/Django/django_project/blog/views.py" />
+        <option value="$PROJECT_DIR$/Django/django_project/blog/urls.py" />
+        <option value="$PROJECT_DIR$/Violent Python/test.py" />
+        <option value="$PROJECT_DIR$/Modules/urllib0.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="670" />
-    <option name="y" value="-2" />
+    <option name="y" value="-6" />
     <option name="width" value="697" />
     <option name="height" value="775" />
   </component>
@@ -91,7 +129,7 @@
             <path>
               <item name="Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="Django" type="462c0819:PsiDirectoryNode" />
+              <item name="Modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -100,6 +138,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -120,7 +159,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.sortingInPy">
+  <component name="RunManager" selected="Python.urllib0">
     <configuration name="lambdaExpression" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -184,7 +223,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="traversalFiles" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="urllib0" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -192,11 +231,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modules" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="E:\NewFolder\code\Python\something\traversalFiles.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/urllib0.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -230,16 +269,16 @@
       <item itemvalue="Python.lambdaExpression2" />
       <item itemvalue="Python.lambdaExpression" />
       <item itemvalue="Python.sortingInPy" />
-      <item itemvalue="Python.traversalFiles" />
       <item itemvalue="Python.yield" />
+      <item itemvalue="Python.urllib0" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.urllib0" />
         <item itemvalue="Python.sortingInPy" />
         <item itemvalue="Python.yield" />
         <item itemvalue="Python.lambdaExpression2" />
         <item itemvalue="Python.lambdaExpression" />
-        <item itemvalue="Python.traversalFiles" />
       </list>
     </recent_temporary>
   </component>
@@ -337,22 +376,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="670" y="-2" width="697" height="775" extended-state="0" />
+    <frame x="670" y="-6" width="697" height="775" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23065251" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23823975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27039105" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2694704" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" auto_hide="true" id="TODO" order="6" weight="0.32866043" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.31931463" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.317757" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32977098" />
       <window_info anchor="bottom" x="11" y="277" width="1344" height="214" id="Python Console" order="9" weight="0.32872504" />
-      <window_info anchor="bottom" x="395" y="464" width="892" height="209" id="Terminal" order="10" weight="0.3317757" />
+      <window_info anchor="bottom" x="395" y="464" width="892" height="209" id="Terminal" order="10" weight="0.48442367" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -458,23 +498,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Django/command.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Django/django_project/manage.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Django/command.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Django/django_project/django_project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        <state relative-caret-position="178">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
           <folding>
             <element signature="e#638#670#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django/django_project/blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django/django_project/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Violent Python/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Violent Python/crack_zip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Violent Python/dictionary.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/urllib0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
