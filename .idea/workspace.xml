@@ -2,33 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="866c38da-6f16-4a06-a04f-148a713b38df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/something/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/something/file_object0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/something/test0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/os0.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/.idea/something.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/class.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/class2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/class2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/fileName.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/fileName.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/lambdaExpression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/lambdaExpression.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/lambdaExpression2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/lambdaExpression2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/mapFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/mapFunction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/networkSpeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/networkSpeed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/randomWalk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/randomWalk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/rasieException.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/rasieException.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/sortingInPy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/sortingInPy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/traversalFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/traversalFiles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/with_statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/with_statement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/yield.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/yield.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/yield2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/yield2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/something/youtube-dl_rename.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/youtube-dl_rename.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/test.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,19 +24,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Modules/requests0.py">
+        <entry file="file://$PROJECT_DIR$/Modules/something/file_object0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="17" selection-start-line="24" selection-end-line="25" />
+            <state relative-caret-position="152">
+              <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Modules/something/file_object0.py">
+        <entry file="file://$PROJECT_DIR$/Modules/os0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+            <state relative-caret-position="21">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -74,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/Modules/something/test1.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+              <caret column="8" selection-start-column="8" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -147,12 +123,13 @@
         <option value="$PROJECT_DIR$/Modules/something/file_object.py" />
         <option value="$PROJECT_DIR$/Modules/something/test0.txt" />
         <option value="$PROJECT_DIR$/Modules/something/file_object0.py" />
+        <option value="$PROJECT_DIR$/Modules/os0.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="490" />
-    <option name="y" value="-19" />
+    <option name="y" value="-2" />
     <option name="width" value="877" />
     <option name="height" value="775" />
   </component>
@@ -176,12 +153,6 @@
               <item name="Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="something" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Python" type="b2602c69:ProjectViewProjectNode" />
@@ -217,7 +188,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.file_object0">
+  <component name="RunManager" selected="Python.os0">
     <configuration name="arpAttack0" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -260,6 +231,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="os0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/os0.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="requests0" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -273,27 +265,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/requests0.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="sortingInPy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/something" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/something/sortingInPy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -324,19 +295,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.sortingInPy" />
       <item itemvalue="Python.urllib0" />
       <item itemvalue="Python.requests0" />
       <item itemvalue="Python.arpAttack0" />
       <item itemvalue="Python.file_object0" />
+      <item itemvalue="Python.os0" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.os0" />
         <item itemvalue="Python.file_object0" />
         <item itemvalue="Python.arpAttack0" />
         <item itemvalue="Python.requests0" />
         <item itemvalue="Python.urllib0" />
-        <item itemvalue="Python.sortingInPy" />
       </list>
     </recent_temporary>
   </component>
@@ -442,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556150254919</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update">
+      <created>1556334037421</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1556334037421</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TodoView">
@@ -455,7 +433,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="490" y="-19" width="877" height="775" extended-state="0" />
+    <frame x="490" y="-2" width="877" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657926" />
@@ -463,7 +441,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995314" weight="0.2694704" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4995314" visible="true" weight="0.2694704" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -668,7 +646,7 @@
     <entry file="file://$PROJECT_DIR$/Modules/something/test1.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+          <caret column="8" selection-start-column="8" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -677,8 +655,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Modules/something/file_object0.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="152">
           <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/os0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
