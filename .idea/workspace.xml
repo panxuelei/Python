@@ -1,9 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="866c38da-6f16-4a06-a04f-148a713b38df" name="Default Changelist" comment="update">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="866c38da-6f16-4a06-a04f-148a713b38df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Modules/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/something/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/something/file_object0.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/something/test0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/.idea/something.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/class.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/class.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/class2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/class2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/fileName.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/fileName.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/lambdaExpression.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/lambdaExpression.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/lambdaExpression2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/lambdaExpression2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/mapFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/mapFunction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/networkSpeed.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/networkSpeed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/randomWalk.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/randomWalk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/rasieException.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/rasieException.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/sortingInPy.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/sortingInPy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/traversalFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/traversalFiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/with_statement.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/with_statement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/yield.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/yield.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/yield2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/yield2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/something/youtube-dl_rename.py" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/something/youtube-dl_rename.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,12 +37,53 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Modules/kamene/test.py">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/urllib0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+            <state relative-caret-position="178">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/requests0.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="24" column="17" selection-start-line="24" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Modules/something/file_object0.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/something/test0_copy.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/something/test1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Modules/something/test0.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="1" selection-start-column="1" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -34,6 +100,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GotoClassSymbolConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="BuildoutCfg" />
+      <filtered-out-file-type name="DTD" />
+      <filtered-out-file-type name="EditorConfig" />
+      <filtered-out-file-type name="HTML" />
+      <filtered-out-file-type name="JQL" />
+      <filtered-out-file-type name="JSON" />
+      <filtered-out-file-type name="JSON5" />
+      <filtered-out-file-type name="Markdown" />
+      <filtered-out-file-type name="TEXT" />
+      <filtered-out-file-type name="Properties" />
+      <filtered-out-file-type name="Python" />
+      <filtered-out-file-type name="RegExp" />
+      <filtered-out-file-type name="RELAX-NG" />
+      <filtered-out-file-type name="ReST" />
+      <filtered-out-file-type name="XHTML" />
+      <filtered-out-file-type name="XML" />
+      <filtered-out-file-type name="yaml" />
+    </file-type-list>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -42,27 +129,32 @@
         <option value="$PROJECT_DIR$/something/lambdaExpression2.py" />
         <option value="$PROJECT_DIR$/something/mapFunction.py" />
         <option value="$PROJECT_DIR$/something/sortingInPy.py" />
-        <option value="$PROJECT_DIR$/something/youtube-dl_rename.py" />
+        <option value="$PROJECT_DIR$/Django/website/music/models.py" />
+        <option value="$PROJECT_DIR$/Django/website/website/settings.py" />
+        <option value="$PROJECT_DIR$/Django/website/manage.py" />
+        <option value="$PROJECT_DIR$/Django/website/music/views.py" />
+        <option value="$PROJECT_DIR$/Django/website/website/urls.py" />
+        <option value="$PROJECT_DIR$/Django/website/music/urls.py" />
         <option value="$PROJECT_DIR$/Django/command.txt" />
-        <option value="$PROJECT_DIR$/Modules/socket_client0.py" />
-        <option value="$PROJECT_DIR$/Modules/socket_server0.py" />
-        <option value="$PROJECT_DIR$/Modules/socket_exceptions0.py" />
-        <option value="$PROJECT_DIR$/Modules/socket/socket_port_scanner0.py" />
-        <option value="$PROJECT_DIR$/Modules/socket/ping_sweep0.py" />
-        <option value="$PROJECT_DIR$/Modules/socket/socket_client0.py" />
-        <option value="$PROJECT_DIR$/Modules/socket/socket_server0.py" />
-        <option value="$PROJECT_DIR$/Modules/test.py" />
-        <option value="$PROJECT_DIR$/Modules/nmap0.py" />
+        <option value="$PROJECT_DIR$/Django/django_project/blog/url.py" />
+        <option value="$PROJECT_DIR$/Django/django_project/django_project/urls.py" />
+        <option value="$PROJECT_DIR$/Django/django_project/blog/views.py" />
+        <option value="$PROJECT_DIR$/Django/django_project/blog/urls.py" />
+        <option value="$PROJECT_DIR$/Violent Python/test.py" />
+        <option value="$PROJECT_DIR$/Modules/urllib0.py" />
+        <option value="$PROJECT_DIR$/Modules/requests0.py" />
         <option value="$PROJECT_DIR$/Modules/scapy/arpAttack0.py" />
-        <option value="$PROJECT_DIR$/Modules/kamene/test.py" />
+        <option value="$PROJECT_DIR$/Modules/something/file_object.py" />
+        <option value="$PROJECT_DIR$/Modules/something/test0.txt" />
+        <option value="$PROJECT_DIR$/Modules/something/file_object0.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="773" />
-    <option name="y" value="2" />
-    <option name="width" value="840" />
-    <option name="height" value="1046" />
+    <option name="x" value="490" />
+    <option name="y" value="-19" />
+    <option name="width" value="877" />
+    <option name="height" value="775" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -89,13 +181,12 @@
               <item name="Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
               <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="kamene" type="462c0819:PsiDirectoryNode" />
+              <item name="something" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Python" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python" type="462c0819:PsiDirectoryNode" />
-              <item name="Modules" type="462c0819:PsiDirectoryNode" />
-              <item name="socket" type="462c0819:PsiDirectoryNode" />
+              <item name="stamp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -106,11 +197,11 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\NewFolder\code\Python\Modules\socket" />
+      <recent name="D:\Git Sync\Python\Modules" />
       <recent name="E:\NewFolder\code\Python\something" />
     </key>
   </component>
@@ -126,7 +217,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test (1)">
+  <component name="RunManager" selected="Python.file_object0">
     <configuration name="arpAttack0" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -134,9 +225,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modules/scapy" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/scapy/arpAttack0.py" />
@@ -148,7 +239,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="nmap0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="file_object0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modules/something" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/something/file_object0.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="requests0" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,7 +272,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/nmap0.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/requests0.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,19 +281,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="socket_client0 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sortingInPy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modules/socket" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/something" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/socket/socket_client0.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/something/sortingInPy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -190,28 +302,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Modules/kamene" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/kamene/test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="urllib0" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -223,7 +314,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Modules/urllib0.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -233,19 +324,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.sortingInPy" />
+      <item itemvalue="Python.urllib0" />
+      <item itemvalue="Python.requests0" />
       <item itemvalue="Python.arpAttack0" />
-      <item itemvalue="Python.nmap0" />
-      <item itemvalue="Python.socket_client0 (1)" />
-      <item itemvalue="Python.test (1)" />
-      <item itemvalue="Python.test" />
+      <item itemvalue="Python.file_object0" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.file_object0" />
         <item itemvalue="Python.arpAttack0" />
-        <item itemvalue="Python.nmap0" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.socket_client0 (1)" />
+        <item itemvalue="Python.requests0" />
+        <item itemvalue="Python.urllib0" />
+        <item itemvalue="Python.sortingInPy" />
       </list>
     </recent_temporary>
   </component>
@@ -296,54 +387,91 @@
       <updated>1547143639962</updated>
     </task>
     <task id="LOCAL-00006" summary="update">
-      <created>1548677519685</created>
+      <created>1548373449470</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1548677519685</updated>
+      <updated>1548373449479</updated>
     </task>
     <task id="LOCAL-00007" summary="update">
-      <created>1556015626072</created>
+      <created>1548373483587</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1556015626072</updated>
+      <updated>1548373483587</updated>
     </task>
     <task id="LOCAL-00008" summary="update">
-      <created>1556103724458</created>
+      <created>1548589336580</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1556103724458</updated>
+      <updated>1548589336580</updated>
     </task>
     <task id="LOCAL-00009" summary="update">
-      <created>1556192849929</created>
+      <created>1548589349159</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1556192849929</updated>
+      <updated>1548589349159</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update">
+      <created>1548739881481</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1548739881481</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update">
+      <created>1555976381939</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555976381940</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <created>1555976525134</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1555976525134</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update">
+      <created>1556150254919</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1556150254919</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="773" y="2" width="840" height="1046" extended-state="0" />
+    <frame x="490" y="-19" width="877" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.18444166" />
-      <window_info id="Structure" order="1" sideWeight="0.50076103" side_tool="true" weight="0.18444166" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657926" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49937266" weight="0.26345292" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995314" weight="0.2694704" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32960895" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3206278" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50062734" side_tool="true" weight="0.26345292" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3295964" />
+      <window_info anchor="bottom" auto_hide="true" id="TODO" order="6" weight="0.32866043" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.317757" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5004686" side_tool="true" weight="0.2694704" />
+      <window_info anchor="bottom" x="11" y="277" width="1344" height="214" id="Python Console" order="9" weight="0.32872504" />
+      <window_info anchor="bottom" x="395" y="464" width="892" height="209" id="Terminal" order="10" weight="0.48442367" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -358,167 +486,199 @@
     <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/something/traversalFiles.py">
+    <entry file="file://$PROJECT_DIR$/Modules/something/traversalFiles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/something/lambdaExpression.py">
+    <entry file="file://$PROJECT_DIR$/Modules/something/lambdaExpression.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
           <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/something/lambdaExpression2.py">
+    <entry file="file://$PROJECT_DIR$/Modules/something/lambdaExpression2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/something/class2.py">
+    <entry file="file://$PROJECT_DIR$/Modules/something/class.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/something/yield2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Modules/something/class2.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/something/with_statement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Modules/something/yield2.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/something/mapFunction.py">
+    <entry file="file://$PROJECT_DIR$/Modules/something/with_statement.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/something/mapFunction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
           <caret line="23" column="6" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/something/sortingInPy.py">
+    <entry file="file://$PROJECT_DIR$/Modules/something/sortingInPy.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/something/yield.py">
+    <entry file="file://$PROJECT_DIR$/Modules/something/yield.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Django/website/website/settings.py" />
-    <entry file="file://$PROJECT_DIR$/Django/website/website/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/Django/website/manage.py" />
-    <entry file="file://$PROJECT_DIR$/something/youtube-dl_rename.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        <state relative-caret-position="273">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/图片加边框/图片合并加边框/给每张图片单独加边框/1addBorder.py">
+    <entry file="file://$PROJECT_DIR$/Django/website/music/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/Django/website/music/apps.py" />
+    <entry file="file://$PROJECT_DIR$/Django/website/music/tests.py" />
+    <entry file="file://$PROJECT_DIR$/Django/website/music/admin.py" />
+    <entry file="file://$PROJECT_DIR$/Django/website/website/settings.py" />
+    <entry file="file://$PROJECT_DIR$/Django/website/music/models.py" />
+    <entry file="file://$PROJECT_DIR$/Django/website/manage.py" />
+    <entry file="file://$PROJECT_DIR$/Django/website/website/urls.py" />
+    <entry file="file://$PROJECT_DIR$/Django/website/music/views.py" />
+    <entry file="file://$PROJECT_DIR$/Django/website/music/urls.py" />
+    <entry file="file://$PROJECT_DIR$/Django/django_project/django_project/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django/django_project/django_project/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="336">
+          <caret line="98" column="6" lean-forward="true" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django/django_project/django_project/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#230#239#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django/django_project/manage.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Django/command.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="126">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/socket/client.py" />
-    <entry file="file://$PROJECT_DIR$/socket/server.py" />
-    <entry file="file://$PROJECT_DIR$/Modules/urllib0.py">
+    <entry file="file://$PROJECT_DIR$/Django/django_project/django_project/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/socket/socket_exceptions0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/something/class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/socket/socket_port_scanner0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="178">
+          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
           <folding>
-            <element signature="e#219#239#0" expanded="true" />
+            <element signature="e#638#670#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/socket/socket_server0.py">
+    <entry file="file://$PROJECT_DIR$/Django/django_project/blog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/socket/ping_sweep0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        <state relative-caret-position="63">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
           <folding>
-            <element signature="e#349#358#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/scapy/arpAttack0.py" />
-    <entry file="file://$PROJECT_DIR$/Modules/nmap0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/socket/socket_client0.py">
+    <entry file="file://$PROJECT_DIR$/Django/django_project/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Modules/kamene/test.py">
+    <entry file="file://$PROJECT_DIR$/Violent Python/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Violent Python/crack_zip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Violent Python/dictionary.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/urllib0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/requests0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/scapy/arpAttack0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/requests0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="24" column="17" selection-start-line="24" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/something/test0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/something/test1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/something/test0_copy.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Modules/something/file_object0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="58" column="46" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
         </state>
       </provider>
     </entry>
