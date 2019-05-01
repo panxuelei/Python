@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="866c38da-6f16-4a06-a04f-148a713b38df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Others/try_except0.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/crawler/hdpornpictures.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/crawler/source.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projects/page_most_frequent_words.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/projects/crawler/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/bilibili_playlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/crawler/bilibili_playlist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/hdpornpictures.py" beforeDir="false" afterPath="$PROJECT_DIR$/Others/class0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/merge_video.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/crawler/merge_video.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/mzitu.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/crawler/mzitu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/mzitu_info.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/crawler/mzitu_info.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/source.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Others/tips_and_tricks0.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/t66y.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/crawler/t66y.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/crawler/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/crawler/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/vipergirls.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/crawler/vipergirls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/vipergirls_imx.py" beforeDir="false" afterPath="$PROJECT_DIR$/projects/crawler/vipergirls_imx.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/Others/tips_and_tricks0.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="346">
-              <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+              <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -88,7 +72,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Others/class0.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
+            <state relative-caret-position="277">
               <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
             </state>
           </provider>
@@ -187,7 +171,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="670" />
-    <option name="y" value="-2" />
+    <option name="y" value="-42" />
     <option name="width" value="697" />
     <option name="height" value="775" />
   </component>
@@ -349,11 +333,11 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.class0" />
       <item itemvalue="Python.os0" />
+      <item itemvalue="Python.page_most_frequent_words" />
       <item itemvalue="Python.tips_and_tricks0" />
       <item itemvalue="Python.try_except0" />
-      <item itemvalue="Python.page_most_frequent_words" />
-      <item itemvalue="Python.class0" />
     </list>
     <recent_temporary>
       <list>
@@ -481,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556553577221</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update">
+      <created>1556691270128</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1556691270128</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -494,7 +485,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="670" y="-2" width="697" height="775" extended-state="0" />
+    <frame x="670" y="-46" width="697" height="775" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -502,7 +493,7 @@
       <window_info content_ui="combo" id="Project" order="2" weight="0.26403642" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4995314" visible="true" weight="0.2694704" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995314" weight="0.2694704" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -726,7 +717,7 @@
     <entry file="file://$PROJECT_DIR$/Others/tips_and_tricks0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
-          <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+          <caret line="57" column="41" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -749,7 +740,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Others/class0.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
+        <state relative-caret-position="277">
           <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
