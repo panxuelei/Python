@@ -12,10 +12,20 @@ import os
 # os.removedirs('OS-Demo1/Sub-Dir0')
 
 # rename(old, new)
-os.rename('test.py', 'temp.py')
+# os.rename('temp.py', 'test.py')
 
-# infomation of a file
-print(os.stat('temp.py'))
+# # infomation of a file
+# print(os.stat('test.py'))
+# print(os.stat('test.py').st_size)
+#
+# from datetime import datetime
+# mod_time = os.stat('test.py').st_mtime
+# print(datetime.fromtimestamp(mod_time))
 
+# path = 'C:\\Users\\Aaron Swartz\\Desktop\\New folder'
+# for dirpath, dirnames, filenames in os.walk(path):
+#     print('Current path: ', dirpath)
+#     print('Directories: ', dirnames)
+#     print('Files: ', filenames)
 
-print(os.listdir())
+print(os.environ.get('PATH').split(';')[0])
