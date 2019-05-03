@@ -29,3 +29,5 @@ import os
 #     print('Files: ', filenames)
 
 print(os.environ.get('PATH').split(';')[0])
+print(os.path.exists('temp\\temp.txt'))
+print(os.path.isdir(os.environ.get('PATH').split(';')[0]))
