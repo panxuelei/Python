@@ -1,0 +1,20 @@
+ifconfig eth0 down/up
+
+# config of wireless card
+iwconfig
+
+airmon-ng
+
+# 查看那些服务进程可能会把Monitor模式关掉，kill它们
+airmon-ng check
+airmon-ng check kill
+
+# 给网卡开启Monitor模式 --> 新网卡wlan1mon
+airmon-ng start wlan1
+
+# 关闭Monitor模式
+airmon-ng stop wlan1mon
+
+# start network-manager, see more details
+service network-manager start
+
