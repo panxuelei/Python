@@ -15,6 +15,6 @@ airmon-ng start wlan1
 # 关闭Monitor模式
 airmon-ng stop wlan1mon
 
-# start network-manager, see more details
+# 好像没啥用
 service network-manager start
 
