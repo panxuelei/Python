@@ -14,7 +14,7 @@
 from unrar import  rarfile
 
 dictionary = 'E:\\NewFolder\\code\\Python\\Violent Python\\Crack_zip\\dictionary.txt'
-file = ''
+file = '                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          '
 extract_to = '\\'.join(file.split('\\')[0:-1])+ '\\' + file.split('\\')[-1].split('.')[0]
 print(extract_to)
 print("Hi")

@@ -3,7 +3,8 @@ ifconfig eth0 down/up
 # config of wireless card
 iwconfig
 
-airmon-ng
+
+# airmon-ng
 
 # 查看那些服务进程可能会把Monitor模式关掉，kill它们
 airmon-ng check
@@ -34,6 +35,15 @@ macchanger -r wlan0
 # 对某一主机断网
 aireplay-ng --deauth 2000 -a AP_MAC -c CLIENT_MAC wlan0mon
 
+
+
+# nmap
+
+# 进行ping扫描，输出所有响应的主机IP
+nmap -sP 192.168.1.0/24
+
+# 扫描指定主机的开放端口，系统版本等信息
+nmap -A 192.168.1.111
 
 
 
