@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Python Training Exercises - Exercise 4.6</title>
+</head>
+
+<body>
+<h1>Exercise 4.6</h1>
+
+<table width=600 bgcolor="#e0e0ff" border=1 cellpadding=20>
+<tr>
+<td>
+<b>Objectives:</b>
+<ul>
+<li>Learn how to create a custom HTTP service</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<p>
+<b>(a) Making a Custom HTTP Server</b>
+
+<p>
+Create a file <tt>httpstockserver.py</tt>.  In this file, use the HTTPServer library module to implement
+a completely custom HTTP server. Have the server listen on port 44000 and respond to requests of the following form:
+
+<blockquote>
+<pre>
+http://localhost:44000/IBM
+</pre>
+</blockquote>
+
+Have the server send a response back as an XML document like this:
+
+<blockquote>
+<pre>
+&lt;?xml version="1.0"?>
+&lt;quote>
+   &lt;stock>
+       &lt;symbol>IBM&lt;/symbol>
+       &lt;name>&lt;![CDATA[INTL BUSINESS MAC]]>&lt;/name>
+       &lt;price>89.58&lt;/price>
+       &lt;change>-1.93&lt;/change>
+       &lt;percent>-2.11%&lt;/percent>
+       &lt;date>2/19/2009&lt;/date>
+       &lt;time>10:57am&lt;/time>
+       &lt;open>91.06&lt;/open>
+       &lt;high>92.16&lt;/high>
+       &lt;low>89.34&lt;/low>
+       &lt;volume>4587582&lt;/volume>
+   &lt;/stock>
+&lt;/quote>
+</pre>
+</blockquote>
+
+To implement this server, start with the <tt>stockquote.py</tt> script
+that you wrote earlier.  You're going to be remove all of the CGI
+machinery, change the script into a stand-alone HTTP server, and
+change the output to XML.
+
+<p>
+To test your server, run it in a separate windows than IDLE.  Then, try
+connecting to it using the urllib module from IDLE.
+
+<blockquote>
+<pre>
+>>> <b>import urllib</b>
+>>> <b>u = urllib.urlopen("http://localhost:44000/IBM")</b>
+>>> <b>resp = u.read()</b>
+>>> <b>print resp</b>
+... look at the XML output ...
+>>>
+</pre>
+</blockquote>
+
+<p>
+<b>Discussion:</b>  You've just built a very simple web service that
+accepts requests and emits XML-data as a response.   Something like
+this could be expanded into a larger web service that integrates
+with other web-related components.  For example, you could have the
+XML server perform caching of requests, follow real-time streams, etc.
+</p>
+
+
+<hr>
+[ <a href="index.html">Index</a> | <a href="soln4_6.html">Solution</a> | <a href="ex5_1.html">Next</a> ]
+</body>
+</html>

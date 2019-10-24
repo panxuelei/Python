@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Python Training Exercises - Exercise 2.2</title>
+</head>
+
+<body>
+<h1>Exercise 2.2</h1>
+
+<table width=600 bgcolor="#e0e0ff" border=1 cellpadding=20>
+<tr>
+<td>
+<b>Objectives:</b>
+<ul>
+<li>Using urllib2 to supply a username and password
+</ul>
+</td>
+</tr>
+</table>
+
+<p>
+<b>(a) Tweet That</b>
+
+<p>
+In the last exercise, we wrote a function that executed a search query on
+<a href="http://www.twitter.com">Twitter</a> and returned the result.  In this exercise, we'll write a function
+that posts an update message to Twitter.  To do this, you have to send a
+request that includes basic authentication.
+
+<p>
+Follow these steps carefully.  First, build an opener:
+
+<blockquote>
+<pre>
+>>> <b>import urllib2, urllib</b>
+>>> <b>auth = urllib2.HTTPBasicAuthHandler()</b>
+>>> <b>password = "<em>given by Dave in class</em>"</b>
+>>> <b>auth.add_password("Twitter API","http://twitter.com","pythonclass",password)</b>
+>>> <b>opener = urllib2.build_opener(auth)</b>
+</pre>
+</blockquote>
+
+This opener enables basic HTTP authentication, which is required by the Twitter API.
+Now, let's try to post a status message to Twitter:
+
+<blockquote>
+<pre>
+>>> <b>fields = { 'status' : "<em>Yourname</em> is alive!</em>" }</b>   # Fill in your name here
+>>> <b>parms = urllib.urlencode(fields)</b>
+>>> <b>request = urllib2.Request("http://twitter.com/statuses/update.json",parms)</b>
+>>> <b>u = opener.open(request)</b>
+>>> <b>resp = u.read()</b>
+>>> <b>print resp</b>
+... see what you get ...
+</pre>
+</blockquote>
+
+If this works, you'll be able to see your update message when logged into Twitter.
+
+<p>
+Turn all of the above example code into a function <tt>update(status)</tt> that
+lets you easily update your status.   For example:
+
+<blockquote>
+<pre>
+>>> <b>update(username,password,"I'm alive!")</b>
+>>>
+</pre>
+</blockquote>
+
+<p>
+Note:  More information about the Twitter API can be found at
+<a href="http://apiwiki.twitter.com/Twitter-API-Documentation">http://apiwiki.twitter.com/Twitter-API-Documentation</a>.
+
+<hr>
+[ <a href="index.html">Index</a> | <a href="soln2_2.html">Solution</a> | <a href="ex2_3.html">Next</a> ]
+</body>
+</html>

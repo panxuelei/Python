@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>Python Training Exercises - Exercise 3.1</title>
+</head>
+
+
+<body>
+<h1>Exercise 3.1</h1>
+
+<table width=600 bgcolor="#e0e0ff" border=1 cellpadding=20>
+<tr>
+<td>
+<b>Objectives:</b>
+<ul>
+<li>Simple HTML parsing
+<li>How to parse XML using SAX
+</ul>
+</td>
+</tr>
+</table>
+
+<p>
+
+<p>
+<b>(a) Parsing HTML</b>
+
+<p>
+Try experimenting with the HTML parsing example from the class notes.  Here's the class that was defined:
+
+<blockquote>
+<table><tr><td><pre>
+from HTMLParser import HTMLParser
+class GatherLinks(HTMLParser):
+    def __init__(self):
+        HTMLParser.__init__(self)
+        self.links = []
+    def handle_starttag(self,tag,attrs):
+        if tag == 'a':
+           for name,value in attrs:
+               if name == 'href':
+                   self.links.append(value)
+</pre></td></tr></table></blockquote>
+
+<p>
+Here's a sample session that experiments with the above class:
+
+<blockquote>
+<pre>
+>>> <b>parser = GatherLinks()</b>
+>>> <b>import urllib</b>
+>>> <b>data = urllib.urlopen("http://www.python.org").read()</b>
+>>> <b>parser.feed(data)</b>
+>>> <b>for x in parser.links:
+         print x</b>
+
+... look at the output ...
+>>>
+</pre>
+</blockquote>
+
+<p>
+Spend some time to make sure you understand the control-flow and event-driven nature of
+the code.  In particular, how the parser sweeps over a document and triggers the
+<tt>handle_starttag()</tt> method as it encounters elements.</p>
+
+<p>
+<b>(b) Parsing XML</b>
+
+<p>
+In <a href="ex2_1.html">Exercise 2.1</a>, you wrote a
+program <tt>bustrack.py</tt> that issued a request to get bus
+predictions for a particular bus stop and returned the results as XML.
+For example:
+
+<blockquote>
+<pre>
+>>> <b>data = bus_prediction("6","5037")</b>
+>>> <b>print data</b>
+&lt;?xml version="1.0"?>
+&lt;stop>
+  &lt;id>5037&lt;/id>
+  &lt;nm>&lt;![CDATA[Lake Park & E. Hyde Park Blvd]]>&lt;/nm>
+  &lt;sri>
+    &lt;rt>&lt;![CDATA[6]]>&lt;/rt>
+    &lt;d>&lt;![CDATA[North Bound]]>&lt;/d>
+  &lt;/sri>
+  &lt;sbs>
+  &lt;/sbs>
+  &lt;cr>6&lt;/cr>
+  &lt;pre>
+    &lt;pt>8 MIN&lt;/pt>
+    &lt;fd>&lt;![CDATA[Wacker/Columbus]]>&lt;/fd>
+    &lt;v>6431&lt;/v>
+    &lt;rn>6&lt;/rn>
+  &lt;/pre>
+  &lt;pre>
+    &lt;pt>16 MIN&lt;/pt>
+    &lt;fd>&lt;![CDATA[Wacker/Columbus]]>&lt;/fd>
+    &lt;v>6409&lt;/v>
+    &lt;rn>6&lt;/rn>
+  &lt;/pre>
+  &lt;pre>
+    &lt;pt>25 MIN&lt;/pt>
+    &lt;fd>&lt;![CDATA[Wacker/Columbus]]>&lt;/fd>
+    &lt;v>6507&lt;/v>
+    &lt;rn>6&lt;/rn>
+  &lt;/pre>
+  &lt;pre>
+    &lt;pt>28 MIN&lt;/pt>
+    &lt;fd>&lt;![CDATA[Wacker/Columbus]]>&lt;/fd>
+    &lt;v>6491&lt;/v>
+    &lt;rn>6&lt;/rn>
+  &lt;/pre>
+&lt;/stop>
+>>>
+</pre>
+</blockquote>
+
+Modify this function so that it parses the XML and simply returns a list of prediction
+times extracted from <tt>pt</tt> elements.
+
+<blockquote>
+<pre>
+>>> <b>bus_prediction("6","5037")</b>
+[u'8 MIN', u'16 MIN', u'25 MIN', u'28 MIN']
+>>> 
+</pre>
+</blockquote>
+
+Note: The lowercase 'u' in front the string literals above indicates Unicode.
+
+<hr>
+[ <a href="index.html">Index</a> | <a href="soln3_1.html">Solution</a> | <a href="ex3_2.html">Next</a> ]
+</body>
+</html>
