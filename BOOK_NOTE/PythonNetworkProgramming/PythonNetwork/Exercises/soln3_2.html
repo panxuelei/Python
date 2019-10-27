@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Python Training Exercises</title>
+</head>
+
+<body>
+<h1>Exercise 3.2 - Solution</h1>
+
+<p>
+<b>(a) Simple XML Parsing</b>
+
+<pre>
+import urllib
+from xml.etree.cElementTree import parse
+
+def bus_prediction(route,stop):
+    fields = { 'route' : route, 
+               'stop' : stop }
+    parms = urllib.urlencode(fields)
+    u = urllib.urlopen("http://ctabustracker.com/bustime/map/getStopPredictions.jsp?"+parms)
+
+    # Parse the XML
+    predictions = []
+    doc = parse(u)
+    for pre in doc.findall("pre"):
+        pt = pre.findtext("pt")
+        predictions.append(pt)
+
+    # Return the prediction list
+    return predictions
+</pre>
+
+<hr>
+
+<p>
+<b>(b) Incremental XML Parsing</b>
+
+<pre>
+# busloc.py
+from xml.etree.cElementTree import iterparse
+
+def bus_locations(f):
+    for event, elem in iterparse(f,('start','end')):
+        if event == 'start' and elem.tag == 'buses':
+            buses = elem
+        elif event == 'end' and elem.tag == 'bus':
+            print "%s,%s,%s,%s,%s" % (
+                elem.findtext('id'),
+                elem.findtext('route'),
+                elem.findtext('direction'),
+                elem.findtext('latitude'),
+                elem.findtext('longitude')
+                )
+            # Discard the bus element by removing it from the parent
+            buses.remove(elem)
+
+# Example use
+if __name__ == '__main__':
+    bus_locations(open("../../Data/allroutes.xml"))
+</pre>
+
+<hr>
+[ <a href="ex3_2.html">Back</a> ]
+</body>
+</html>

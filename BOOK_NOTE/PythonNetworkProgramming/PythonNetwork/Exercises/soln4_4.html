@@ -1,0 +1,103 @@
+<html>
+<head>
+<title>Python Training Exercises</title>
+</head>
+
+<body>
+<h1>Exercise 4.4 - Solution</h1>
+
+<p>
+<b>(b) A First CGI Script</b>
+
+<p>
+<pre>
+#!/usr/bin/env python
+# The above line is required for Unix systems.  Make sure
+# you use the command 'chmod +x hello.py' to make this program executable
+
+print "Content-type: text/html"
+print
+print """
+&lt;html>
+&lt;body>
+&lt;h1>Hello World!&lt;/h1>
+"""
+
+import time
+print "The time is ", time.ctime()
+
+print """
+&lt;/body>
+&lt;/html>
+"""
+</pre>
+
+<p>
+<b>Note</b>: On Unix, you will need to make sure the first line of your script includes the #! as shown above.  In
+addition, you will need to give your CGI script execute permission (e.g., <tt>chmod +x hello.py</tt>).
+
+<hr>
+
+<p>
+<b>(c) Real Time Stock Quotes</b>
+
+<p>
+<pre>
+#!/usr/bin/env python
+
+# A template string containing the desired output.  Modify
+# as needed to change the output
+
+from string import Template
+temp = Template("""\
+&lt;b>$symbol&lt;/b> ($name)&lt;br>
+&lt;font size=+2>&lt;b>$price&lt;/b>&lt;/font> 
+&lt;font color="$color">$change ($percent)&lt;/font> 
+$date $time &lt;br>
+&lt;table>
+&lt;tr>&lt;td>Open:&lt;/td>&lt;td>$open&lt;/td>&lt;td>Volume:&lt;/td>&lt;td>$volume&lt;/td>&lt;/tr>
+&lt;tr>&lt;td>High:&lt;/td>&lt;td>$high&lt;/td>&lt;td>Low:&lt;/td>&lt;td>$low&lt;/td>&lt;/tr>
+&lt;/table>
+""")
+
+# Get form fields
+import cgi
+fields = cgi.FieldStorage()
+s = fields.getvalue('s')
+
+# Fetch data about the selected stock
+request = {
+    's' : s,
+    'f' : 'snl1d1t1c1p2ohgv',
+    'e' : '.csv'
+}
+
+import urllib, csv
+parms = urllib.urlencode(request)
+
+u = urllib.urlopen("http://download.finance.yahoo.com/d/quotes.csv?"+parms)
+
+# Read one line of text and convert into fields.   The csv.DictReader
+# object will do this for you and deal with quoting correctly.
+reader = csv.DictReader(u,['symbol','name','price','date','time','change','percent',
+                           'open','high','low','volume'])
+
+record = reader.next()
+
+record['color'] = 'red'
+try:
+    if float(record['change']) > 0:
+       record['color'] = 'green'
+except ValueError:
+    pass
+
+# Render the template with appropriate variables filled in
+print "Content-type: text/html\r"
+print '\r'
+print temp.substitute(record)
+</pre>
+
+<hr>
+[ <a href="ex4_4.html">Back</a> ]
+</body>
+</html>

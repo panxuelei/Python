@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Python Training Exercises - Exercise 4.4</title>
+</head>
+
+<body>
+<h1>Exercise 4.4</h1>
+
+<table width=600 bgcolor="#e0e0ff" border=1 cellpadding=20>
+<tr>
+<td>
+<b>Objectives:</b>
+<ul>
+<li>Learn how to write simple CGI scripts
+<li>Write a simple CGI script that accepts form parameters and produces a web page.
+</ul>
+</td>
+</tr>
+</table>
+
+<p>
+<b>(a) Supporting CGI scripts</b>
+
+<p>
+In <a href="ex4_3.html">Exercise 4.3</a>, you wrote a very simple web server.  Modify your server so that it is
+also able to run CGI scripts.  This is easy---just change the code slightly the following:
+
+<blockquote>
+<table><tr><td><pre>
+# webserve.py
+# Note: The program must be placed in the PythonNetwork/ folder
+
+from BaseHTTPServer import HTTPServer
+from CGIHTTPServer import CGIHTTPRequestHandler
+import os
+os.chdir("Exercises")
+serv = HTTPServer(("",8080),CGIHTTPRequestHandler)
+serv.serve_forever()
+</pre>
+</td></tr></table>
+</blockquote>
+
+<p>
+
+Restart your server and make sure you can connect to it at the following link:
+
+<blockquote>
+<pre>
+<a href="http://localhost:8080/index.html">http://localhost:8080/index.html</a>
+</pre>
+</blockquote>
+
+This new server will run CGI-scripts if they are placed in
+the <tt>Exercises/cgi-bin</tt> directory.  The next section shows you how.
+
+<p>
+<b>(b) A first CGI script</b>
+
+<p>
+Write a program <tt>hello.py</tt> that simply prints out a "Hello
+World" message along with the current time as an HTML page.  Put your
+program in the directory <tt>Exercises/cgi-bin</tt>.  In the
+browser, try connecting to your script by clicking on this link:
+
+<blockquote><pre>
+<a href="http://localhost:8080/cgi-bin/hello.py">http://localhost:8080/cgi-bin/hello.py<a>
+</pre>
+</blockquote>
+
+<p>
+Do not proceed any further until you can get the <tt>hello.py</tt> script to run.  Try clicking the
+above link a few times---you should see the time updating.
+
+<p>
+<b>CAUTION:</b> On Windows, CGI scripting will not work if the document root
+directory name has any spaces embedded in it (for example, if you're doing your work under the "Documents and Settings" folder).  If this is the case, you may want to move your work to the C:\ drive or to some other location where there are no spaces.</p>
+
+<p>
+<b>(c) Real time stock quotes</b>
+
+<p>
+Write a CGI script <tt>stockquote.py</tt> that accepts a stock symbol as input and 
+produces a simple HTML page showing real-time stock data.   For example, if you
+submit "IBM", you should produce some output like this:
+
+<blockquote>
+<b>IBM</b> (INTL BUSINESS MAC)<br>
+<font size=+2><b>90.67</b></font> <font color="red">-3.17 (-3.38%)</font> Feb 17 4:00pm<br>
+<table>
+<tr><td>Open:</td><td>91.73</td><td>Volume:</td><td>88759353</td></tr>
+<tr><td>High:</td><td>92.49</td><td>Low:</td><td>90.50</td></tr>
+</table>
+</blockquote>
+
+<p>
+To solve this problem, create a program <tt>stockquote.py</tt> in the <tt>Exercises/cgi-bin</tt> directory.
+Have your program accept a stock symbol (s) submitted through the following form:
+
+<blockquote>
+<form action="http://localhost:8080/cgi-bin/stockquote.py" method="POST">
+Stock Symbol: <input type="string" name="s" size=12/></br>
+<input type="submit" name="submit" value="submit"></br>
+</form>
+</blockquote>
+
+To obtain real-time stock data, your CGI program will need to obtain it from somewhere.
+Typically, you might extract it from a database or some other internal source.  However, for
+this exercise, you can extract it from Yahoo by submitting the following request (using urllib):
+
+<blockquote>
+<pre>
+http://download.finance.yahoo.com/d/quotes.csv?s=IBM&f=snl1d1t1c1p2ohgv&e=.csv 
+</pre>
+</blockquote>
+
+For the IBM example shown above, this URL will produce output data in this format:
+
+<blockquote>
+<pre>
+"IBM","INTL BUSINESS MAC",90.67,"2/16/2009","4:00pm",-3.17,"-3.38%",91.73,92.49,90.50,88759353
+</pre>
+</blockquote>
+
+Have your CGI script parse this data and produce the above HTML.
+
+<p>
+<b>Disclaimer:</b> This exercise is only meant to be instructional--please don't build your 
+stock trading empire by mining data off Yahoo (or if you do, don't say you got the idea from me).
+<hr>
+
+[ <a href="index.html">Index</a> | <a href="soln4_4.html">Solution</a> | <a href="ex4_5.html">Next</a> ]
+</body>
+</html>

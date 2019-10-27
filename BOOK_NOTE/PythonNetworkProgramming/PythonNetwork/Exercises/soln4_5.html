@@ -1,0 +1,116 @@
+
+<html>
+<head>
+<title>Python Training Exercises</title>
+</head>
+
+<body>
+<h1>Exercise 4.5 - Solution</h1>
+
+<b>(a) Hello World (WSGI)</b>
+
+<pre>
+#!/usr/bin/env python
+# The above line is required for Unix systems.  Make sure
+# you use the command 'chmod +x hello.py' to make this program executable
+
+import time
+
+def hello_app(environ,start_response):
+    headers = [
+        ('Content-type','text/html')
+        ]
+    start_response("200 OK", headers)
+
+    # This is a little weird at first, but the result should be a list
+    # of byte strings that make up the output
+    result = []
+    result.append("""\
+&lt;html>
+&lt;body>
+&lt;h1>Hello World!&lt;/h1>
+""")
+    result.append("The time is " + time.ctime())
+    result.append("""\
+&lt;/body>
+&lt;/html>
+""")
+    return result
+
+# Run as a CGI script
+import wsgiref.handlers
+wsgiref.handlers.CGIHandler().run(hello_app)
+</pre>
+
+<hr>
+
+<p>
+<b>(b) Stock Quotes (WSGI)</b>
+
+<p>
+<pre>
+#!/usr/bin/env python
+
+# A template string containing the desired output.  Modify
+# as needed to change the output
+
+from string import Template
+import urllib, csv
+
+temp = Template("""\
+&lt;b>$symbol&lt;/b> ($name)&lt;br>
+&lt;font size=+2>&lt;b>$price&lt;/b>&lt;/font> 
+&lt;font color="$color">$change ($percent)&lt;/font> 
+$date $time &lt;br>
+&lt;table>
+&lt;tr>&lt;td>Open:&lt;/td>&lt;td>$open&lt;/td>&lt;td>Volume:&lt;/td>&lt;td>$volume&lt;/td>&lt;/tr>
+&lt;tr>&lt;td>High:&lt;/td>&lt;td>$high&lt;/td>&lt;td>Low:&lt;/td>&lt;td>$low&lt;/td>&lt;/tr>
+&lt;/table>
+""")
+
+def stockquote_app(environ,start_response):
+    # Get form fields
+    import cgi
+    fields = cgi.FieldStorage(environ['wsgi.input'],
+                              environ=environ)
+    s = fields.getvalue('s')
+
+    # Fetch data about the selected stock
+    request = {
+        's' : s,
+        'f' : 'snl1d1t1c1p2ohgv',
+        'e' : '.csv'
+        }
+
+
+    parms = urllib.urlencode(request)
+
+    u = urllib.urlopen("http://download.finance.yahoo.com/d/quotes.csv?"+parms)
+    reader = csv.DictReader(u,['symbol','name','price','date','time','change','percent',
+                               'open','high','low','volume'])
+
+    record = reader.next()
+
+    if float(record['change']) > 0:
+        record['color'] = 'green'
+    else:
+        record['color'] = 'red'
+
+    # Generate the response
+    headers = [
+            ('Content-type','text/html')
+            ]
+    start_response("200 OK", headers)
+
+    # Render the template and return it
+    return [temp.substitute(record)]
+
+# Run as a CGI script
+import wsgiref.handlers
+wsgiref.handlers.CGIHandler().run(stockquote_app)
+</pre>
+
+<hr>
+[ <a href="ex4_5.html">Back</a> ]
+</body>
+</html>

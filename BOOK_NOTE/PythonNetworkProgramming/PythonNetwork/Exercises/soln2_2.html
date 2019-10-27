@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Python Training Exercises</title>
+</head>
+
+<body>
+<h1>Exercise 2.2 - Solution</h1>
+
+<p>
+<b>(a) Tweet that!</b>
+
+<pre>
+# tweet.py
+
+import urllib,urllib2
+
+def update(username,password,status):
+    auth = urllib2.HTTPBasicAuthHandler()
+    auth.add_password("Twitter API","http://twitter.com",username,password)
+    opener = urllib2.build_opener(auth)
+
+    fields = {
+        'status' : status
+        }
+    parms = urllib.urlencode(fields)
+    request = urllib2.Request("http://twitter.com/statuses/update.json",parms)
+    u = opener.open(request)
+    resp = u.read()
+    return resp
+</pre>
+
+<hr>
+[ <a href="ex2_2.html">Back</a> ]
+</body>
+</html>

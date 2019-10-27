@@ -1,0 +1,173 @@
+<html>
+<head>
+<title>Python Training Exercises - Exercise 5.4</title>
+</head>
+
+<body>
+<h1>Exercise 5.4</h1>
+
+<table width=600 bgcolor="#e0e0ff" border=1 cellpadding=20>
+<tr>
+<td>
+<b>Objectives:</b>
+<ul>
+<li>Serializing Python objects with pickle
+</ul>
+</td>
+</tr>
+</table>
+
+<p>
+In the last exercise we experimented with sending various kinds of
+Python objects to an XML-RPC server.   We also saw that that certain
+kinds of objects didn't work at all or had slightly odd behavior.
+</p>
+
+<p>
+Take the XML-RPC server code that you used in the last exercise and
+modify it so that it uses <tt>pickle</tt> to decode received objects.
+For example, like this:
+
+<blockquote>
+<table><tr><td><pre>
+# pickle_xmlrpc.py
+from SimpleXMLRPCServer import SimpleXMLRPCServer
+import pickle
+
+def command(encobj):
+    obj = pickle.loads(encobj)
+    print repr(obj)
+    # Note: the repr() function prints out the representation of
+    # an object using Python syntax.
+    return True
+
+serv = SimpleXMLRPCServer(("",45000))
+serv.register_function(command)
+serv.serve_forever()
+</pre></td></tr></table>
+</blockquote>
+
+<p>
+Run this server in a separate Python interpreter as you were doing in
+the previous exercise.</p>
+
+<p>
+<b>(a) Sending Arbitrary Python Objects</b>
+</p>
+
+<p>
+This new XML-RPC server is going to work with almost any Python object
+whatsoever--the only requirement is that you use <tt>pickle</tt> to
+encode the arguments to <tt>command()</tt>.  Try it out:
+
+<blockquote>
+<pre>
+>>> <b>from xmlrpclib import ServerProxy</b>
+>>> <b>s = ServerProxy("http://localhost:45000")</b>
+>>> <b>import pickle</b>
+>>> <b>s.command(pickle.dumps("Hello World"))</b>   # String
+>>> <b>s.command(pickle.dumps(9876543210))</b>      # Long int
+>>> <b>s.command(pickle.dumps((1,2,3,4)))</b>       # Tuple
+>>>
+</pre>
+</blockquote>
+
+<p>
+Again, pay careful attention to the server and watch what it is
+printing.  It should be receiving the exact objects that you are
+supplying to the <tt>pickle.dumps()</tt> function in your tests.
+</p>
+
+<p>
+Try sending some Python-specific objects such as dates, decimals,
+sets,etc.
+</p>
+
+<blockquote>
+<pre>
+>>> <b>from decimal import Decimal</b>
+>>> <b>x = Decimal("3.14159")</b>
+>>> <b>s.command(pickle.dumps(x))</b>
+>>>
+>>> <b>from datetime import datetime</b>
+>>> <b>d = datetime.now()</b>
+>>> <b>d</b>
+datetime.datetime(2009, 11, 15, 15, 36, 9, 426348)
+>>> <b>s.command(pickle.dumps(d))</b>
+>>>
+</pre>
+</blockquote>
+
+<p>
+<b>(b) Sending User-Defined Objects</b>
+</p>
+
+<p>
+You can send user-defined objects as long as both the client and
+server have access to the source code where classes are defined.
+Create a file <tt>person.py</tt> that contains the following class
+definition:
+
+<blockquote>
+<table><tr><td><pre>
+# person.py
+
+class Person(object):
+     def __init__(self,firstname, lastname):
+         self.firstname = firstname
+         self.lastname = lastname
+     def __repr__(self):
+         return "Person(%r,%r)" % (self.firstname, self.lastname)
+</pre></td></tr></table>
+</blockquote>
+
+<p>
+Make sure the file <tt>person.py</tt> can be accessed with the
+<tt>import</tt> statement in the server (e.g., it's in a directory
+found on <tt>sys.path</tt>).
+</p>
+
+<p>
+Now, try this in the client interpreter where you have been
+experimenting.
+</p>
+
+<blockquote>
+<pre>
+>>> <b>from person import Person</b>
+>>> <b>p = Person('Guido','van Rossum')</b>
+>>> <b>p</b>
+Person('Guido','van Rossum')
+>>> <b>s.command(pickle.dumps(p))</b>
+>>>
+</pre>
+</blockquote>
+
+<p>
+Carefully look at the output in the server.  You should see it receive
+the <tt>Person</tt> instance normally.   Be aware that the server will
+automatically import the <tt>person.py</tt> file so that it can load
+the <tt>Person</tt> class definition.</p>
+
+<p>
+<font color="#ff0000"><b>A WORD OF WARNING</b></font>
+</p>
+
+<p> Using pickle to send Python objects between interpreters can be
+extremely useful.  However, be aware that pickle is inherently
+insecure.  In fact, if someone knows that a server is receiving
+objects encoded with pickle, they could use that knowledge to send the
+server messages that would make it execute arbitrary system commands
+when decoding the data with <tt>loads()</tt>.
+
+<p>
+<font color="#ff0000"><b>Pickle should only be used if you have absolute control over the
+environment and authenticity of incoming messages.</b></font>
+</p>
+
+<P>
+<hr>
+[ <a href="index.html">Index</a> | <a href="soln5_4.html">Solution</a>
+| <a href="ex5_5.html">Next</a> ]
+</body>
+</html>

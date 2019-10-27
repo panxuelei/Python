@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>Python Training Exercises - Exercise 5.5</title>
+</head>
+
+<body>
+<h1>Exercise 5.5</h1>
+
+<table width=600 bgcolor="#e0e0ff" border=1 cellpadding=20>
+<tr>
+<td>
+<b>Objectives:</b>
+<ul>
+<li>Communicating interpreters with multiprocessing
+</ul>
+</td>
+</tr>
+</table>
+
+<p>
+The <tt>multiprocessing</tt> library has a number of features that
+generally make it a better choice for setting up a collection of
+communicating Python interpreters--especially compared to XML-RPC.
+Some notable differences include:</p>
+
+<ul>
+  <li>Support creating a "permanent" communication channel.  In other
+  words, you can set up a connection just once at startup and repeatedly use it
+  for the life of the interpreters.  XML-RPC makes a new connection
+  with every request.
+
+  <p>
+  <li>Support for authentication.  Both the listener and client have
+  to specify an authorization key in order for any kind of connection to be
+  established.  The authorization key itself is never sent in any kind
+  of clear-text. Instead, connections are authenticated using HMAC, a
+  technique involving cryptographic message digests.   In other words,
+  it's going to be extremely difficult for some outside party to
+  establish a connection unless they know the authkey.  This is true even if they
+  are somehow able to intercept and monitor the network packets being sent
+  between interpreters.
+
+  <p>
+  <li>Support for passing arbitrary Python objects using
+  pickle as well as features for sending raw binary buffers.
+</ul>
+
+<p>
+In this exercise, we're going to look at some of the features of
+multiprocessing connections.  Keep in mind this is only a small part
+of what the multiprocessing module provides.</p>
+
+<p>
+<b>(a) Make a connection</b>
+</p>
+
+<p>
+In a separate Python interpreter, create a multiprocessing server by
+typing these commands:
+</p>
+
+<blockquote>
+<pre>
+>>> <b>from multiprocessing.connection import Listener</b>
+>>> <b>listener = Listener(("",16000),authkey="peekaboo")</b>
+>>> <b>client = listener.accept()</b>
+</pre>
+</blockquote>
+
+<p>
+Now, in a different Python interpreter, create a client connection by
+typing these commands:</p>
+
+<blockquote>
+<pre>
+>>> <b>from multiprocessing.connection import Client</b>
+>>> <b>remote = Client(("",16000),authkey="peekaboo")</b>
+>>>
+</pre>
+</blockquote>
+
+<p>
+At this point, both interpreters should be connected to each
+other. You should be able to type interactive commands in both.
+</p>
+
+<p>
+<b>(b) Send Python Objects</b>
+</p>
+
+<p>
+Send an object from the client to the server using <tt>send()</tt> and
+<tt>recv()</tt>.
+</p>
+
+<p>
+In the client:
+</p>
+
+<blockquote>
+<pre>
+>>> <b>remote.send([1,2,3,4])</b>
+>>>
+</pre>
+</blockquote>
+
+<p>
+In the server:
+</p>
+
+<blockquote>
+<pre>
+>>> <b>client.recv()</b>
+[1, 2, 3, 4]
+>>>
+</pre>
+</blockquote>
+
+<p>
+These objects are encoded and decoded with pickle during
+transmission.  So, like the previous exercise, you can send any of
+Python's built-in types, instances of user-defined classes, and so forth.
+</p>
+
+<p>
+<b>(c) Sending Binary Buffers</b>
+</p>
+
+<p>
+It is also possible to send raw binary strings.   There is a different
+set of send/recv commands for this.   Try this experiment.
+</p>
+
+<p>
+In the client, create a binary packed message and send it.
+</p>
+
+<blockquote>
+<pre>
+>>> <b>import struct</b>
+>>> <b>msg = struct.pack("ii",1234,5678)</b>
+>>> <b>msg</b>
+'\xd2\x04\x00\x00.\x16\x00\x00'
+>>> <b>remote.send_bytes(msg)</b>
+>>>
+</pre>
+</blockquote>
+
+<p>
+In the server, type the following to receive the bytes:
+</p>
+
+<blockquote>
+<pre>
+>>> <b>msg = client.recv_bytes()</b>
+>>> <b>msg</b>
+'\xd2\x04\x00\x00.\x16\x00\x00'
+>>> <b>import struct</b>
+>>> <b>x,y = struct.unpack("ii",msg)</b>
+>>> <b>x,y</b>
+(1234, 5678)
+>>>
+</pre>
+</blockquote>
+
+<p>
+Some important things are going on here.  Unlike sockets,
+byte-messages are always processed as a single intact message.  The
+message returned by <tt>recv_bytes()</tt> is always exactly the same
+as the message sent by <tt>send_bytes()</tt>.  For this reason, it is
+not necessary to specify a maximum message size nor is it necessary to
+reassemble a message from fragments.
+</p>
+
+<P>
+<hr>
+[ <a href="index.html">Index</a> | <a href="soln5_5.html">Solution</a> ]
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Python Training Exercises - Exercise 1.3</title>
+</head>
+
+<body>
+<h1>Exercise 1.3</h1>
+
+<table width=600 bgcolor="#e0e0ff" border=1 cellpadding=20>
+<tr>
+<td>
+<b>Objectives:</b>
+<ul>
+<li>Learn about some different socket I/O modes and options
+</ul>
+</td>
+</tr>
+</table>
+
+<p>
+In network programming, it is common to hear about different kinds of
+I/O programming models such as blocking I/O, nonblocking I/O, and
+polling. The purpose of this exercise is to simply define
+what these terms mean with some simple socket examples.
+</p>
+
+<p>
+<b>(a) Blocking I/O</b>
+</p>
+
+<p>
+Blocking I/O means that operations such as <tt>accept()</tt>, <tt>recv()</tt> or <tt>send()</tt>
+will block (wait) until the requested operation can be completed.  
+Consider the server you were working on in the last exercise:
+
+<blockquote>
+<pre>
+>>> <b>from socket import *</b>
+>>> <b>s = socket(AF_INET, SOCK_STREAM)</b>
+>>> <b>s.bind(("",15000))</b>
+>>> <b>s.listen(5)</b>
+>>> <b>c,a = s.accept()</b>
+</pre>
+</blockquote>
+
+<p>
+You will notice that the <tt>accept()</tt> operation waits
+indefinitely until a new connection arrives.   This is blocking I/O in action.
+</p>
+
+<p>
+In IDLE (client), connect to your server to see it unblock and return.
+</p>
+<blockquote>
+<pre>
+>>> <b>from socket import *</b>
+>>> <b>s = socket(AF_INET, SOCK_STREAM)</b>
+>>> <b>s.connect(("",15000))</b>
+>>>
+</pre>
+</blockquote>
+
+<p>
+<b>(b) Blocking I/O with a timeout</b>
+</p>
+
+<p>
+You can set a timeout using the <tt>settimeout()</tt> method of a
+socket. In your server, set a timeout on the client connection
+that you just received.  Try to receive some data and just sit there
+and wait:
+
+<blockquote>
+<pre>
+>>> <b>c.settimeout(15)</b>
+>>> <b>c.recv(8192)</b>
+... wait 15 seconds. See what happens ...
+</pre>
+</blockquote>
+
+<p>
+In production code, setting some kind of timeout is probably not a
+bad idea.   A common failure mode for servers is the case where a
+client connects, but then never sends any data--holding the client
+connection open forever.   With a timeout, the server can give up after
+a while and close the connection.</p>
+
+<p>
+<b>(c) Non-blocking I/O</b>
+</p>
+
+<p>
+Non-blocking I/O is a style of I/O handling where operations immediately
+raise an exception if the operation can't be completely immediately.
+On the server, try doing this with the client connection received in part (b):
+
+<blockquote>
+<pre>
+>>> <b>c.setblocking(False)</b>
+>>> <b>c.recv(8192)</b>
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+socket.error: [Errno 35] Resource temporarily unavailable
+>>> 
+</pre>
+</blockquote>
+
+<p>
+You will notice that <tt>recv()</tt> immediately raises an exception. If
+you try it again, you'll get the same exception over and over.
+
+<p>
+In IDLE (the client), try sending a short message to the server:
+</p>
+
+<blockquote>
+<pre>
+>>> <b>s.send("Hello?")</b>
+6
+>>>
+</pre>
+</blockquote>
+
+<p>
+Try redoing the <tt>recv()</tt> operation.  Notice that it works now.
+This is because the server received some data that it can now return.
+</p>
+
+<blockquote>
+<pre>
+>>> <b>c.recv(8192)</b>
+'Hello?'
+>>> 
+</pre>
+</blockquote>
+
+<p>
+Although non-blocking I/O could be used to periodically
+check a socket for incoming data, it's extremely uncommon for it to be used
+in that manner.   It is actually more common for non-blocking mode
+to be used when <em>sending</em> data.  That might sound counterintuitive,
+but it allows the sender to continue with its data processing even
+if a socket's output buffers are temporarily full (instead of
+blocking, the sender continues to do other work).</p>
+
+<hr>
+[ <a href="index.html">Index</a> | <a href="soln1_3.html">Solution</a> | <a href="ex2_1.html">Next</a> ]
+</body>
+</html>

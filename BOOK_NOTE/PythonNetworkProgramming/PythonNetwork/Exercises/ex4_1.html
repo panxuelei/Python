@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Python Training Exercises - Exercise 4.1</title>
+</head>
+
+<body>
+<h1>Exercise 4.1</h1>
+
+<table width=600 bgcolor="#e0e0ff" border=1 cellpadding=20>
+<tr>
+<td>
+<b>Objectives:</b>
+<ul>
+  <li>Learn about HTTP by manually issuing a request</li>
+</ul>
+</td>
+</tr>
+</table>
+
+<p>
+To learn about the basics of HTTP, we're going to manually issue a 
+request and look at the response.</p>
+
+<p>
+First, create a Python string that contains a simple HTTP request.  Note: this must be typed in exactly for it to work.</p>
+</p>
+
+<blockquote>
+<pre>
+>>> <b>request = """\
+GET /download/ HTTP/1.0
+Host: www.python.org
+
+"""</b>
+>>>
+</pre>
+</blockquote>
+
+<p>
+Now, open a socket connection to a remote web server, send the 
+above request, and look at the response:</p>
+
+<blockquote>
+<pre>
+>>> <b>from socket import *</b>
+>>> <b>s = socket(AF_INET, SOCK_STREAM)</b>
+>>> <b>s.connect(("www.python.org",80))</b>
+>>> <b>s.sendall(request)</b>
+46
+>>> <b>data = s.recv(8192)</b>
+>>> <b>print data</b>
+... look at the output ...
+</pre>
+</blockquote>
+
+<p>
+When looking at the response, carefully study the response line, headers, and
+content.
+<hr>
+
+
+[ <a href="index.html">Index</a> | <a href="soln4_1.html">Solution</a> | <a href="ex4_2.html">Next</a> ]
+</body>
+</html>

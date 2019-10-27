@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>Python Training Exercises - Exercise 2.1</title>
+</head>
+
+<body>
+<h1>Exercise 2.1</h1>
+
+<table width=600 bgcolor="#e0e0ff" border=1 cellpadding=20>
+<tr>
+<td>
+<b>Objectives:</b>
+<ul>
+<li>Learn how to connect to various internet services using <tt>urllib</tt></li>
+</ul>
+</td>
+</tr>
+</table>
+
+<p>
+
+<p>
+<b>(a) Where's my bus?</b>
+
+<p>
+The Chicago Transit Authority (CTA) runs a web site
+(<a href="http://ctabustracker.com">http://ctabustracker.com</a>) that
+can be used to track city buses (most of which are equipped with GPS).
+This website also has an unofficial API that can feed bus data back as
+XML.
+
+<p>
+The
+URL <tt>http://ctabustracker.com/bustime/map/getStopPredictions.jsp</tt>
+can be used to give you a prediction of how long you'll have to wait
+for a bus to arrive at a particular stop and route.  To get this
+information, you need supply a route number such as 49 and a stop id number
+such as 8207.   Try it out:
+
+<blockquote>
+<pre>
+>>> <b>import urllib</b>
+>>> <b>fields = { 'stop' : '8207', 'route':'49'}</b>
+>>> <b>parms = urllib.urlencode(fields)</b>
+>>> <b>u = urllib.urlopen("http://ctabustracker.com/bustime/map/getStopPredictions.jsp?"+parms)</b>
+>>> <b>resp = u.read()</b>
+>>> <b>print resp</b>
+... see what you get ...
+</pre>
+</blockquote>
+
+<p>
+Create a file called <tt>bustrack.py</tt>.  In this file, define a function
+<tt>bus_prediction(route,stop)</tt> that accepts a route and stop as input, 
+issues a request, and returns the XML data corresponding to the prediction.
+</p>
+
+<p>
+Now, use your function to find out how long all of the tourists visiting Barack Obama's
+south side home will have to wait to catch the number 6 bus at stop 5037 (Lake Park &amp; Hyde Park 
+Blvd) to take them back downtown.
+</p>
+
+<blockquote>
+<pre>
+>>> <b>print bus_prediction("6","5037")</b>
+... look at the output ...
+</pre>
+</blockquote>
+<p>
+Note: We'll deal with XML parsing in a little bit. Not to worry.
+</p>
+
+
+<p>
+<b>(b) Tweet This</b>
+
+<p>
+In a file <tt>tweet.py</tt>, write a function <tt>tweets(subject,nresults)</tt> that
+accepts as input a subject string and maximum number of search results and submits a search
+request to <a href="http://www.twitter.com">Twitter</a>.  Have the function return the raw output.
+
+<p>
+Here is an example of the URL you will submit:
+
+<blockquote>
+<pre>
+http://search.twitter.com/search.json?q=python&rpp=50
+</pre>
+</blockquote>
+
+<p>
+Here's how the function will be used to return the first 25 tweets containing
+the word "python".
+
+<blockquote>
+<pre>
+>>> <b>t = tweets("python",25)</b>
+>>>
+</pre>
+</blockquote>
+
+<p>
+Note: The output of this request will be encoded in JSON (Javascript Object Notation).  We'll
+deal with it later.
+
+<hr>
+[ <a href="index.html">Index</a> | <a href="soln2_1.html">Solution</a> | <a href="ex2_2.html">Next</a> ]
+</body>
+</html>
